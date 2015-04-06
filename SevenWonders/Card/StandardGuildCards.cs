@@ -22,8 +22,8 @@ namespace SevenWonders.StandardCards.Guild
         private int BasicResourcesCount(GamestateContext context)
         {
             int total = 0;
-            total += context.LeftPlayer.GetCountOfCardCategory(CardCategory.BasicResource);
-            total += context.RightPlayer.GetCountOfCardCategory(CardCategory.BasicResource);
+            total += context.LeftPlayer.Tableau.GetCountOfCardCategory(CardCategory.BasicResource);
+            total += context.RightPlayer.Tableau.GetCountOfCardCategory(CardCategory.BasicResource);
             return 0;
         }
     }
