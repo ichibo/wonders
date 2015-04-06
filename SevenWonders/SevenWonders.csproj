@@ -53,12 +53,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CardSet\CardSet.cs" />
     <Compile Include="Card\StandardGuildCards.cs" />
     <Compile Include="Card\StandardMarketCards.cs" />
     <Compile Include="Managers\IPointsManager.cs" />
-    <Compile Include="Managers\WarManager.cs" />
-    <Compile Include="PlayInfo.cs" />
-    <Compile Include="PlayInfoSettings.cs" />
+    <Compile Include="Managers\IWarManager.cs" />
+    <Compile Include="PlayInfo\PlayInfo.cs" />
+    <Compile Include="PlayInfo\PlayInfoSettings.cs" />
     <Compile Include="ResourcePaymentStrategy.cs" />
     <Compile Include="GamestateContext.cs" />
     <Compile Include="WarToken.cs" />
@@ -84,7 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MarketBenefit\MarketBenefit.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="Player\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -102,6 +103,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

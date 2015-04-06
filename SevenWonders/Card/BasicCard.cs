@@ -29,5 +29,7 @@ namespace SevenWonders
         {
            return PlayInfo.GetComplexPoints(context);
         }
+
+        public virtual int SimplePoints { get { return 0; } }
     }
 }
