@@ -18,15 +18,7 @@ namespace SevenWonders
 
         public int CalculateTotalPoints(GamestateContext context)
         {
-            int total = 0;
-
-            foreach(BasicCard card in context.MainPlayer.Tableau.Cards)
-            {
-                total += card.GetComplexPoints(context);
-                total += card.SimplePoints;
-            }
-
-            return total;
+            return 0;
         }
 
         // Passed in science tokens can be multi-token flags and not single discrete items.
